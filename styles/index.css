@@ -18,15 +18,18 @@ header {
     justify-content: center;
 }
 
-header h1 {
+header p {
     grid-column: 3/3;
     margin-left: 12px;
+    font-size: 2.5rem;
+    text-align: center;
 }
 
 header span img {
     grid-column: 3/2;
     margin-right: 12px;
 }
+
 
 /*NAV*/
 nav {
@@ -48,29 +51,33 @@ nav a:hover {
 nav a:active {
     color: rgba(255, 255, 0, 0.791);
 }
+
 nav a:visited {
     color: rgba(255, 255, 0, 0.791);
 }
+
 /*MAIN*/
-main{
+main {
     display: grid;
     grid-template-columns: 1, 1;
 }
-main h1{
+
+main h1 {
     color: var(--main-color);
 }
-#courseWork{
+
+#courseWork {
     border: 1px solid rgb(214, 212, 212);
     box-shadow: 2px 2px gray;
     margin: 10px;
     grid-column: 1/1;
 }
-#courseWork h2{
+
+#courseWork h2 {
     text-align: center;
     background-color: var(--main-color);
     padding: 2px;
     color: var(--hs-color);
 }
-#city{
-    
-}
+
+#city {}
