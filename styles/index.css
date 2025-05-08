@@ -1,0 +1,76 @@
+* {
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color: rgb(43, 93, 150);
+    --nav-background-color: rgb(40, 37, 37);
+    --hs-color: azure;
+}
+
+/*HEADER*/
+header {
+    background-color: var(--main-color);
+    color: var(--hs-color);
+    display: grid;
+    padding: 1%;
+    justify-content: center;
+}
+
+header h1 {
+    grid-column: 3/3;
+    margin-left: 12px;
+}
+
+header span img {
+    grid-column: 3/2;
+    margin-right: 12px;
+}
+
+/*NAV*/
+nav {
+    background-color: var(--nav-background-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: red;
+}
+
+nav a:active {
+    color: rgba(255, 255, 0, 0.791);
+}
+nav a:visited {
+    color: rgba(255, 255, 0, 0.791);
+}
+/*MAIN*/
+main{
+    display: grid;
+    grid-template-columns: 1, 1;
+}
+main h1{
+    color: var(--main-color);
+}
+#courseWork{
+    border: 1px solid rgb(214, 212, 212);
+    box-shadow: 2px 2px gray;
+    margin: 10px;
+    grid-column: 1/1;
+}
+#courseWork h2{
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 2px;
+    color: var(--hs-color);
+}
+#city{
+    
+}
