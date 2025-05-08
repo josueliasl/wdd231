@@ -1,4 +1,4 @@
-@media (min-width: 320px) and (max-width: 1200px) {
+@media only screen and (min-width:1200px) {
     * {
         margin: 0 auto;
         font-family: "Roboto", sans-serif;
@@ -11,19 +11,19 @@
         --hs-color: azure;
     }
 
+    /*HEADER*/
     header {
         background-color: var(--main-color);
         color: var(--hs-color);
         display: grid;
         padding: 1%;
         justify-content: center;
-        align-items: end;
     }
 
     header p {
         grid-column: 3/3;
         margin-left: 12px;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         text-align: center;
     }
 
@@ -32,49 +32,55 @@
         margin-right: 12px;
     }
 
+
+    /*NAV*/
     nav {
         background-color: rgb(70 83 107 / 100%);
         margin: 0 auto;
         max-width: 800px;
         font-family: sans-serif;
-    }
-
-    nav ul {
-        list-style-type: none;
-    }
-
-    nav a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
+        font-size: larger;
         text-decoration: none;
     }
 
-    nav a:hover {
-        text-decoration: overline;
+    nav ul {
+        display: flex;
     }
 
-    .active {
-        color: yellow;
+    nav ul li {
+        flex: 1 1 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
     }
 
     p {
-        margin: 1rem auto;
-        width: fit-content;
-        font-family: Acme, sans-serif;
+        font-size: larger;
+    }
+
+
+
+    nav a:hover {
+        color: red;
+    }
+
+    nav a:active {
+        color: rgba(255, 255, 0, 0.791);
+    }
+
+    nav a:visited {
+        color: rgba(255, 255, 0, 0.791);
     }
 
     /*MAIN*/
     main {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 1, 1, 1;
     }
 
     main h1 {
         color: var(--main-color);
-        font-size: 1.5rem;
-        text-align: center;
     }
 
     /*Section 1*/
@@ -82,7 +88,8 @@
         border: var(--border-color);
         box-shadow: 2px 2px gray;
         margin: 10px;
-        padding: 10px;
+        grid-column: 2/1;
+        padding: 20px;
         width: 100%;
     }
 
@@ -91,27 +98,6 @@
         background-color: var(--main-color);
         padding: 2px;
         color: var(--hs-color);
-    }
-
-    /*Section 2*/
-    #city {
-        border: var(--border-color);
-        box-shadow: 2px 2px gray;
-        text-align: center;
-        padding: 10px;
-    }
-
-    #city h2 {
-        background-color: var(--main-color);
-        color: var(--hs-color);
-    }
-
-    #city h2 {
-        padding: 2%;
-    }
-
-    figcaption {
-        font-size: small;
     }
 
     /*Section 2*/
@@ -140,7 +126,8 @@
     #dynamic-section {
         border: var(--border-color);
         box-shadow: 2px 2px gray;
-        margin: 5px;
+        margin: 10px;
+        grid-column: 1/3;
     }
 
     #dynamic-section h2 {

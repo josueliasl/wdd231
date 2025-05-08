@@ -9,6 +9,7 @@
     <title>Home WDD231 Josue Leyva</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
     <script src="scripts/index.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,13 +20,16 @@
     <header>
         <span><img src="images/me-course.jpg" width="100" alt="Josue Leyva in the Mexican Oval Office"></span>
         <p>Home WDD231 Josue Leyva</p>
+        <a id="menu" href="#"></a>
     </header>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="chamber.html">Chamber</a>
-        <a href="final-project.html">Final</a>
-        <a href="https://github.com/josueliasl">Github Profile</a>
-        <a href="https://www.linkedin.com/in/josue-e/">Linkedin</a>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="chamber.html">Chamber</a></li>
+            <li><a href="final-project.html">Final</a></li>
+            <li><a href="https://github.com/josueliasl">Github Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/josue-e/">Linkedin</a></li>
+        </ul>
     </nav>
     <main>
         <h1>Home WDD231 Josue Leyva</h1>
@@ -41,15 +45,18 @@
 
         <section id="city">
             <h2>Puebla, Mexico</h2>
-
+            <figure>
+                <img src="images/puebla.jpeg" alt="Puebla City beautiful street" width="100%">
+                <figcaption>Puebla City beautiful street</figcaption>
+            </figure>
         </section>
 
-        <section>
+        <section id="dynamic-section">
             <h2>Web and Computer Programming Certificate</h2>
         </section>
     </main>
     <footer>
-        <p><span id="currentYear"></span> 🌮 Josue E. Leyva 🌮 Mexico 🦅</p>
+        <p id="name"><span id="currentYear"></span> 🌮 Josue E. Leyva 🌮 Mexico 🦅</p>
         <p id="lastModified"></p>
     </footer>
 </body>
