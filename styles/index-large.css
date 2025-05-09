@@ -14,7 +14,7 @@
     }
 
     /*HEADER*/
-    header {
+    #header {
         background-color: var(--main-color);
         color: var(--hs-color);
         display: grid;
@@ -22,14 +22,14 @@
         justify-content: center;
     }
 
-    header p {
+    #header p {
         grid-column: 3/3;
         margin-left: 12px;
         font-size: 2.5rem;
         text-align: center;
     }
 
-    header span img {
+    #header span img {
         grid-column: 3/2;
         margin-right: 12px;
     }

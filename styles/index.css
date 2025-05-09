@@ -11,7 +11,7 @@
         --hs-color: azure;
     }
 
-    header {
+    #header {
         background-color: var(--main-color);
         color: var(--hs-color);
         display: grid;
@@ -20,14 +20,14 @@
         align-items: end;
     }
 
-    header p {
+    #header p {
         grid-column: 3/3;
         margin-left: 12px;
         font-size: 1.5rem;
         text-align: center;
     }
 
-    header span img {
+    #header span img {
         grid-column: 3/2;
         margin-right: 12px;
     }
