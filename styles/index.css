@@ -57,9 +57,9 @@
 
     .navigation a:hover {
         color: yellow;
-        background-color: var(--main-color);
         padding-right: 1px;
     }
+
 
     .show li {
         display: block;
