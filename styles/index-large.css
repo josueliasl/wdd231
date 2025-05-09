@@ -1,13 +1,15 @@
 @media only screen and (min-width:1200px) {
-    * {
+    body {
         margin: 0 auto;
         font-family: "Roboto", sans-serif;
         --border-color: 1px solid rgb(214, 212, 212);
+        display: flex;
+        flex-direction: column;
     }
 
     :root {
         --main-color: rgb(43, 93, 150);
-        --nav-background-color: rgb(40, 37, 37);
+        --nav-background-color: black;
         --hs-color: azure;
     }
 
@@ -35,12 +37,16 @@
 
     /*NAV*/
     nav {
-        background-color: rgb(70 83 107 / 100%);
+        background-color: var(--nav-background-color);
         margin: 0 auto;
-        max-width: 800px;
         font-family: sans-serif;
         font-size: larger;
+        width: 100%;
+    }
+
+    nav a {
         text-decoration: none;
+        color: var(--hs-color);
     }
 
     nav ul {
@@ -58,25 +64,14 @@
     p {
         font-size: larger;
     }
-
-
-
-    nav a:hover {
-        color: red;
-    }
-
-    nav a:active {
-        color: rgba(255, 255, 0, 0.791);
-    }
-
-    nav a:visited {
-        color: rgba(255, 255, 0, 0.791);
+    #menu{
+        display: none;
     }
 
     /*MAIN*/
     main {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     main h1 {
@@ -88,9 +83,9 @@
         border: var(--border-color);
         box-shadow: 2px 2px gray;
         margin: 10px;
-        grid-column: 2/1;
-        padding: 20px;
-        width: 100%;
+        grid-column: 1/2;
+        padding: 10px;
+        width: 90%;
     }
 
     #courseWork h2 {
@@ -106,7 +101,7 @@
         box-shadow: 2px 2px gray;
         text-align: center;
         padding: 20px;
-        grid-column: 2/2;
+        grid-column: 2/3;
     }
 
     #city h2 {

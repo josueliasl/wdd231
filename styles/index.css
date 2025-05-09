@@ -1,5 +1,5 @@
 @media (min-width: 320px) and (max-width: 1200px) {
-    * {
+    body {
         margin: 0 auto;
         font-family: "Roboto", sans-serif;
         --border-color: 1px solid rgb(214, 212, 212);
@@ -7,7 +7,7 @@
 
     :root {
         --main-color: rgb(43, 93, 150);
-        --nav-background-color: rgb(40, 37, 37);
+        --nav-background-color: black;
         --hs-color: azure;
     }
 
@@ -33,7 +33,7 @@
     }
 
     nav {
-        background-color: rgb(70 83 107 / 100%);
+        background-color: var(--nav-background-color);
         margin: 0 auto;
         max-width: 800px;
         font-family: sans-serif;
@@ -45,7 +45,7 @@
 
     nav a {
         display: block;
-        color: #fff;
+        color: var(--hs-color);
         text-align: center;
         padding: 1rem;
         text-decoration: none;
@@ -63,6 +63,29 @@
         margin: 1rem auto;
         width: fit-content;
         font-family: Acme, sans-serif;
+    }
+
+    /*HAM BUTTON*/
+    .show li {
+        display: block;
+    }
+
+    #menu.show::before {
+        content: 'X';
+    }
+
+    #menu {
+        display: block;
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: .5rem .75rem;
+        background-color: var(--main-color);
+        color: white;
+    }
+
+    #menu::before {
+        content: "≡";
     }
 
     /*MAIN*/
