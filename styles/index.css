@@ -32,17 +32,19 @@
         margin-right: 3px;
     }
 
-    .navigation{
+    .navigation {
         list-style: none;
         margin: 0 auto;
         max-width: 100%;
         background-color: var(--nav-background-color);
         text-align: center;
     }
-    nav li{
+
+    nav li {
         display: none;
     }
-    .navigation a{
+
+    .navigation a {
         display: block;
         text-align: left;
         text-decoration: none;
@@ -50,34 +52,37 @@
         transition: 0.5s;
         padding: 12px;
     }
-    
-     .navigation a:hover{
+
+    .navigation a:hover {
         color: yellow;
         background-color: var(--main-color);
         padding-right: 1px;
     }
-    
-    .show li{
+
+    .show li {
         display: block;
     }
-    #menu.show::before{
+
+    #menu.show::before {
         content: 'X';
     }
+
     #menu {
         display: block;
         font-size: 2rem;
-        font-weight:700;
+        font-weight: 700;
         text-decoration: none;
         padding: .5rem .75rem;
         background-color: var(--main-color);
         color: white;
     }
+
     #menu::before {
         content: "≡";
     }
 
     /*HAM BUTTON*/
-    
+
 
     /*MAIN*/
     main {
