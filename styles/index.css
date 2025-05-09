@@ -19,6 +19,7 @@
         padding: 1%;
         justify-content: center;
         align-items: end;
+        max-width: 100%;
     }
 
     #header p {
@@ -111,6 +112,7 @@
         background-color: var(--main-color);
         padding: 2px;
         color: var(--hs-color);
+        max-width: 100%;
     }
 
     /*Section 2*/
