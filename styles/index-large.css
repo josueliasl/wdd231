@@ -9,9 +9,9 @@
     }
 
     :root {
-        --main-color: rgb(43, 93, 150);
-        --nav-background-color: black;
-        --hs-color: azure;
+        --main-color: #2b5d96;
+        --nav-background-color: #000000;
+        --hs-color: #ffffff;
     }
 
     /*HEADER*/
@@ -176,11 +176,11 @@
     }
 
     .card-completed {
-        background-color: rgb(130, 170, 130);
+        background-color: #3c823c;
     }
 
     .card-uncompleted {
-        background-color: rgb(203, 104, 104);
+        background-color: #b34b4b;
     }
 
     /*FOOTER*/
