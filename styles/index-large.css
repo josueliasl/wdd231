@@ -161,7 +161,28 @@
     .links a:hover {
         color: yellow;
     }
-    
+
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        text-align: center;
+    }
+
+    .courses section {
+        border: 1px solid black;
+        margin-top: 6px;
+        border-radius: 15px;
+    }
+
+    .card-completed {
+        background-color: rgb(60, 130, 60);
+    }
+
+    .card-uncompleted {
+        background-color: rgb(179, 75, 75);
+    }
+
     /*FOOTER*/
     footer {
         text-align: center;
