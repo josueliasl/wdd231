@@ -139,6 +139,29 @@
         color: var(--hs-color);
     }
 
+    .links {
+        color: var(--hs-color);
+        display: grid;
+        justify-content: center;
+        grid-template-rows: 1fr;
+        gap: 15%;
+
+    }
+
+    .links a {
+        background-color: black;
+        padding: 20px;
+        border-radius: 5px;
+        color: var(--hs-color);
+        text-decoration: none;
+        grid-row: 1/1;
+        text-align: center;
+    }
+
+    .links a:hover {
+        color: yellow;
+    }
+    
     /*FOOTER*/
     footer {
         text-align: center;

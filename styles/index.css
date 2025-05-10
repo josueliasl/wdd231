@@ -173,6 +173,44 @@
         color: var(--hs-color);
     }
 
+    .links {
+        color: var(--hs-color);
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .links a {
+        background-color: black;
+        padding: 2%;
+        border-radius: 5px;
+        color: var(--hs-color);
+        text-decoration: none;
+    }
+
+    .links a:hover {
+        color: yellow;
+    }
+
+    .courses {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .courses section {
+        border: 1px solid black;
+        margin-top: 6px;
+        border-radius: 15px;
+    }
+
+    .card-completed {
+        background-color: rgb(60, 130, 60);
+    }
+
+    .card-uncompleted {
+        background-color: rgb(179, 75, 75);
+    }
+
     /*FOOTER*/
     footer {
         text-align: center;

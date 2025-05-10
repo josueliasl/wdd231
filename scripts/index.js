@@ -4,14 +4,16 @@ let lastModified = document.lastModified;
 const mainnav = document.querySelector('.navigation')
 const hambutton = document.querySelector('#menu');
 
-hambutton.addEventListener('click', () =>{
+hambutton.addEventListener('click', () => {
     mainnav.classList.toggle('show');
     hambutton.classList.toggle('show')
 })
-
-
 document.getElementById("currentYear").textContent = `©${currentYear}`;
 document.getElementById("lastModified").textContent = ` Last Modification: ${lastModified}`;
+
+function toggleActive(element) {
+    element.classList.toggle('active');
+}
 
 const courses = [
     {
@@ -92,3 +94,55 @@ const courses = [
         completed: false
     }
 ]
+
+createCourseCard(courses);
+
+function createCourseCard(filteredcourses) {
+    const coursesContainer = document.querySelector('.courses');
+    coursesContainer.innerHTML = ""; // Clear the container at the start
+
+    // If no courses match the filter, display a message
+    if (filteredcourses.length === 0) {
+        coursesContainer.innerHTML = "<p>No courses found for the selected filter.</p>";
+        return;
+    }
+
+    // Iterate over all courses and create cards
+    filteredcourses.forEach(course => {
+        let card = document.createElement('section');
+        let subject = document.createElement("h3");
+        let title = document.createElement('p');
+        let credits = document.createElement('p');
+        let status = document.createElement('p');
+
+        subject.innerHTML = `${course.subject} ${course.number}`;
+        title.innerHTML = `${course.title}`;
+        credits.innerHTML = `<span class='label'><strong>Credits:</strong></span> ${course.credits}`;
+        status.innerHTML = `<span class='label'><strong>Completed:</strong></span> ${course.completed}`;
+        card.appendChild(subject);
+        card.appendChild(title);
+        card.appendChild(credits);
+        card.appendChild(status);
+
+        coursesContainer.appendChild(card);
+        card.classList.add(course.completed ? 'card-completed' : 'card-uncompleted');
+    });
+}
+let allCoursesButton = document.querySelector('#all');
+allCoursesButton.addEventListener('click', () => {
+    let all = courses.filter(course => course)
+    createCourseCard(all)
+})
+let wddCoursesButton = document.querySelector('#wdd');
+wddCoursesButton.addEventListener('click', () => {
+    let wddCourses = courses.filter(course => course.subject === 'WDD');
+    createCourseCard(wddCourses)
+})
+
+let csecoursesButton = document.querySelector('#cse');
+csecoursesButton.addEventListener('click', () => {
+    let csecourses = courses.filter(course => course.subject === 'CSE');
+    createCourseCard(csecourses)
+})
+
+
