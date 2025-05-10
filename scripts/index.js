@@ -100,7 +100,7 @@ createCourseCard(courses);
 function createCourseCard(filteredcourses) {
     const coursesContainer = document.querySelector('.courses');
     coursesContainer.innerHTML = ""; // Clear the container at the start
-//REDUCE FUNCTION
+    //REDUCE FUNCTION
     const totalCredits = filteredcourses.reduce((total, credit) => total + credit.credits, 0);
     const totalCreditElement = document.createElement('h2');
     totalCreditElement.innerHTML = `Total credits: ${totalCredits}`;
