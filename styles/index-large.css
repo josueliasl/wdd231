@@ -9,8 +9,8 @@
     }
 
     :root {
-        --main-color: #2b5d96;
-        --nav-background-color: #000000;
+        --main-color: #054379;
+        --nav-background-color: #1F2937;
         --hs-color: #ffffff;
     }
 
@@ -52,7 +52,7 @@
     }
 
     nav a:hover {
-        color: yellow;
+        color: #F59E0B;
     }
 
     nav ul {
@@ -159,7 +159,7 @@
     }
 
     .links a:hover {
-        color: yellow;
+        color: #F59E0B;
     }
 
     .courses {
@@ -176,11 +176,12 @@
     }
 
     .card-completed {
-        background-color: #3c823c;
+        background-color: #93c47d;
     }
 
     .card-uncompleted {
-        background-color: #b34b4b;
+        background-color: #9c2d2d;
+        color: #ffffff;
     }
 
     /*FOOTER*/
@@ -199,6 +200,7 @@
     }
 
     #lastModified {
-        color: rgba(255, 255, 0, 0.791);
+        color: rgb(236, 236, 6);
     }
+}
 }
