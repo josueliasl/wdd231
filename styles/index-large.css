@@ -136,7 +136,7 @@
 
     #dynamic-section h2 {
         text-align: center;
-        align-self: center;
+        align-content: center;
         background-color: var(--main-color);
         padding: 2px;
         color: var(--hs-color);
