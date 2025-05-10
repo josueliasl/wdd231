@@ -165,8 +165,8 @@
     .courses {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-
         text-align: center;
+        gap: 10px;
     }
 
     .courses section {
@@ -176,11 +176,11 @@
     }
 
     .card-completed {
-        background-color: rgb(60, 130, 60);
+        background-color: rgb(130, 170, 130);
     }
 
     .card-uncompleted {
-        background-color: rgb(179, 75, 75);
+        background-color: rgb(203, 104, 104);
     }
 
     /*FOOTER*/
