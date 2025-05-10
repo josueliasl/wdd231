@@ -100,6 +100,11 @@ createCourseCard(courses);
 function createCourseCard(filteredcourses) {
     const coursesContainer = document.querySelector('.courses');
     coursesContainer.innerHTML = ""; // Clear the container at the start
+//REDUCE FUNCTION
+    const totalCredits = filteredcourses.reduce((total, credit) => total + credit.credits, 0);
+    const totalCreditElement = document.createElement('h2');
+    totalCreditElement.innerHTML = `Total credits: ${totalCredits}`;
+    coursesContainer.appendChild(totalCreditElement);
 
     // If no courses match the filter, display a message
     if (filteredcourses.length === 0) {
@@ -144,5 +149,7 @@ csecoursesButton.addEventListener('click', () => {
     let csecourses = courses.filter(course => course.subject === 'CSE');
     createCourseCard(csecourses)
 })
+
+
 
 
