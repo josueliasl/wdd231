@@ -1,0 +1,67 @@
+{
+    "business": [
+        {
+            "name": "Frutería La Esperanza",
+            "address": "Av. Reforma 1204, Col. Centro, Puebla, Pue.",
+            "phone": "+52 222 234 5678",
+            "website": "https://laesperanza.com.mx",
+            "icon": "../images/fruits.jpg",
+            "membership": 1,
+            "description": "Fresh fruits and vegetables, locally sourced products."
+        },
+        {
+            "name": "Tecnologías Plata",
+            "address": "Calle 5 Sur 1508, Col. El Carmen, Puebla, Pue.",
+            "phone": "+52 222 876 5432",
+            "website": "https://tecnologiasplata.mx",
+            "icon": "../images/technology.jpg",
+            "membership": 2,
+            "description": "Tech support, software development, and networking services."
+        },
+        {
+            "name": "Club Deportivo Oro",
+            "address": "Blvd. Atlixco 3421, Col. La Noria, Puebla, Pue.",
+            "phone": "+52 222 998 7766",
+            "website": "https://cluboro.mx",
+            "icon": "../images/gym.jpg",
+            "membership": 3,
+            "description": "High-performance gym, personal training, and spa facilities."
+        },
+        {
+            "name": "Panadería El Buen Trigo",
+            "address": "Av. Juárez 3315, Col. La Paz, Puebla, Pue.",
+            "phone": "+52 222 321 6547",
+            "website": "https://elbuentrigo.com.mx",
+            "icon": "../images/bakery.jpg",
+            "membership": 1,
+            "description": "Artisanal bakery offering traditional Mexican pastries and bread."
+        },
+        {
+            "name": "Café Aromas de México",
+            "address": "Calle 3 Oriente 213, Col. Centro, Puebla, Pue.",
+            "phone": "+52 222 654 3210",
+            "website": "https://aromasdemexico.mx",
+            "icon": "../images/coffe.jpg",
+            "membership": 2,
+            "description": "High-quality Mexican coffee, desserts, and a cozy atmosphere."
+        },
+        {
+            "name": "Librería El Saber",
+            "address": "Av. 16 de Septiembre 1402, Col. Centro, Puebla, Pue.",
+            "phone": "+52 222 789 6543",
+            "website": "https://elsaberlibros.mx",
+            "icon": "../images/library.jpg",
+            "membership": 1,
+            "description": "Independent bookstore offering a wide range of educational and literary materials."
+        },
+        {
+            "name": "Restaurante La Cazuela",
+            "address": "Calle 7 Poniente 918, Col. El Carmen, Puebla, Pue.",
+            "phone": "+52 222 345 6789",
+            "website": "https://lacazuelapuebla.mx",
+            "icon": "../images/restaurant.jpg",
+            "membership": 3,
+            "description": "Traditional Mexican cuisine with a modern touch, locally sourced ingredients."
+        }
+    ]
+}
