@@ -14,3 +14,10 @@ document.getElementById("lastModified").textContent = ` Last Modification: ${las
 function toggleActive(element) {
     element.classList.toggle('active');
 }
+
+
+const business = [
+    {
+        
+    }
+]
