@@ -1,0 +1,97 @@
+@media only screen and (min-width:415px) {
+
+    :root {
+        --top-base: rgb(209, 207, 207);
+        --text-top-base: black;
+        --font-family: "Roboto", sans-serif;
+    }
+
+    header {
+        background-color: var(--top-base);
+        color: var(--hs-color);
+        display: flex;
+        padding: 1%;
+        justify-content: space-around;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    /*NAV*/
+    #header img {
+        width: 105px;
+        margin: 8px;
+    }
+
+    #header {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+    }
+
+    ul li {
+        margin: 22px;
+    }
+
+    li a {
+        color: var(--text-top-base);
+        font-family: var(--font-family);
+        font-size: larger;
+        text-decoration: none;
+
+    }
+
+    li a:hover {
+        color: var(--top-base);
+        background-color: var(--text-top-base);
+        border-radius: 2px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    /* FOOTER */
+    footer {
+        /* This is the only one to change in large css*/
+        display: flex;
+        flex-direction: row;
+        background-color: var(--top-base);
+        font-family: var(--font-family);
+        font-size: smaller;
+        justify-content: space-evenly;
+    }
+
+
+    .sociallinks {
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    .information a {
+        color: var(--text-top-base);
+        text-decoration: none;
+    }
+
+    .information a:hover {
+        color: var(--top-base);
+        background-color: var(--text-top-base);
+    }
+
+    .sociallinks img {
+        width: 42px;
+        height: 42px;
+        margin: 3px;
+        ;
+    }
+
+    .sociallinks img:hover {
+        background-color: var(--text-top-base);
+        padding: 1px;
+    }
+}
