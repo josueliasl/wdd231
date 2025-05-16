@@ -1,6 +1,6 @@
 @media only screen and (max-width:414px) {
     :root {
-        --top-base: rgb(209, 207, 207);
+        --top-base: rgb(237, 235, 235);
         --text-top-base: black;
         --font-family: "Roboto", sans-serif;
     }
@@ -22,8 +22,14 @@
         align-items: end;
     }
 
-    #header h1 {
-        font-size: larger;
+    #header h2 {
+        font-size: 1.9rem;
+        font-family: var(--font-family);
+    }
+
+    #header p {
+        font-family: var(--font-family);
+        font-size: smaller;
     }
 
     #header img {
@@ -94,6 +100,76 @@
         width: 100%;
     }
 
+    /* MAIN */
+
+    main {
+        display: grid;
+    }
+
+    main h1 {
+        font-family: var(--font-family);
+        text-align: center;
+        font-size: 1.6rem;
+    }
+
+    main button {
+        background-color: var(--text-top-base);
+        color: white;
+        padding: 22px;
+        margin: 3px;
+        border-radius: 10px;
+        font-family: var(--font-family);
+    }
+
+    .butons {
+        display: flex;
+        justify-content: center;
+    }
+
+    main button:hover {
+        background-color: var(--top-base);
+        color: var(--text-top-base);
+
+    }
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        display: grid;
+        text-align: center;
+        max-width: 90%;
+        border: black solid 3px;
+        justify-items: center;
+        align-items: center;
+        margin: 5px;
+        border-radius: 10px;
+        background-color: var(--top-base);
+        font-family: var(--font-family);
+    }
+
+    .card img {
+        max-width: 90%;
+    }
+
+    .list {
+        display: grid;
+        text-align: center;
+        border: black solid 3px;
+        border-radius: 10px;
+        background-color: var(--top-base);
+        font-family: var(--font-family);
+        margin: 10px;
+        justify-content: center;
+    }
+
+    .list ul {
+        list-style-type: none;
+    }
+
     /* FOOTER */
     footer {
         /* This is the only one to change in large css*/
@@ -131,4 +207,9 @@
         background-color: var(--text-top-base);
         padding: 1px;
     }
+
+    .icon img {
+        border-radius: 100px;
+    }
+
 }

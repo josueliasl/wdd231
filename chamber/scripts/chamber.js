@@ -46,9 +46,25 @@ function renderGrid() {
         const description = document.createElement('p');
         description.textContent = business.description;
 
+        const phone = document.createElement('p');
+        phone.innerHTML = business.phone;
+
+        const address = document.createElement('p');
+        address.innerHTML = business.address;
+
+        const website = document.createElement('p');
+        website.innerHTML = business.website;
+
+        const membership = document.createElement('p');
+        membership.innerHTML = `Membership: ${business.membership}`;
+
         card.appendChild(icon);
         card.appendChild(name);
         card.appendChild(description);
+        card.appendChild(phone);
+        card.appendChild(address);
+        card.appendChild(website);
+        card.appendChild(membership);
         container.appendChild(card);
     });
 }
@@ -59,12 +75,14 @@ function renderList() {
     const ul = document.createElement('ul');
     businesses.forEach(business => {
         const li = document.createElement('li');
-        li.innerHTML = `${business.name}<br>${business.address}<br>${business.phone}<br>${business.website}<br>${business.description}`;
+        li.innerHTML = `${business.name}<br>${business.address}<br>${business.phone}<br>${business.website}<br>${business.description}<br><br>`;
         ul.appendChild(li);
     });
     container.appendChild(ul);
 }
-renderGrid();
+
 
 bgrid.addEventListener('click', renderGrid);
 blist.addEventListener('click', renderList);
+
+renderGrid();
