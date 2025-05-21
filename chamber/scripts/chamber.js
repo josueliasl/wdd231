@@ -40,6 +40,8 @@ function renderGrid() {
         const icon = document.createElement('img');
         icon.src = `images/${business.icon}`;
         icon.alt = business.name;
+        icon.width = 130;
+        icon.height = 100;
 
         const name = document.createElement('h3');
         name.textContent = business.name;
