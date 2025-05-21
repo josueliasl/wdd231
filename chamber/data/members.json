@@ -50,7 +50,7 @@
             "address": "Av. 16 de Septiembre 1402, Col. Centro, Puebla, Pue.",
             "phone": "+52 222 789 6543",
             "website": "https://elsaberlibros.mx",
-            "icon": "../images/library.jpg",
+            "icon": "./images/library.jpg",
             "membership": 1,
             "description": "Independent bookstore offering a wide range of educational and literary materials."
         },

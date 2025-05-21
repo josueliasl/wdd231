@@ -21,6 +21,7 @@ async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
     businesses = data.business; // temporary testing of data response
+    renderGrid();
 }
 
 getBusinessData();
@@ -85,4 +86,3 @@ function renderList() {
 bgrid.addEventListener('click', renderGrid);
 blist.addEventListener('click', renderList);
 
-renderGrid();
