@@ -5,7 +5,7 @@
             "address": "Av. Reforma 1204, Col. Centro, Puebla, Pue.",
             "phone": "+52 222 234 5678",
             "website": "https://laesperanza.com.mx",
-            "icon": "../images/fruits.jpg",
+            "icon": "../images/fruits.webp",
             "membership": 1,
             "description": "Fresh fruits and vegetables, locally sourced products."
         },
@@ -14,7 +14,7 @@
             "address": "Calle 5 Sur 1508, Col. El Carmen, Puebla, Pue.",
             "phone": "+52 222 876 5432",
             "website": "https://tecnologiasplata.mx",
-            "icon": "../images/technology.jpg",
+            "icon": "../images/technology.webp",
             "membership": 2,
             "description": "Tech support, software development, and networking services."
         },
@@ -23,7 +23,7 @@
             "address": "Blvd. Atlixco 3421, Col. La Noria, Puebla, Pue.",
             "phone": "+52 222 998 7766",
             "website": "https://cluboro.mx",
-            "icon": "../images/gym.jpg",
+            "icon": "../images/gym.webp",
             "membership": 3,
             "description": "High-performance gym, personal training, and spa facilities."
         },
@@ -32,7 +32,7 @@
             "address": "Av. Juárez 3315, Col. La Paz, Puebla, Pue.",
             "phone": "+52 222 321 6547",
             "website": "https://elbuentrigo.com.mx",
-            "icon": "../images/bakery.jpg",
+            "icon": "../images/bakery.webp",
             "membership": 1,
             "description": "Artisanal bakery offering traditional Mexican pastries and bread."
         },
@@ -41,7 +41,7 @@
             "address": "Calle 3 Oriente 213, Col. Centro, Puebla, Pue.",
             "phone": "+52 222 654 3210",
             "website": "https://aromasdemexico.mx",
-            "icon": "../images/coffe.jpg",
+            "icon": "../images/coffe.webp",
             "membership": 2,
             "description": "High-quality Mexican coffee, desserts, and a cozy atmosphere."
         },
@@ -50,7 +50,7 @@
             "address": "Av. 16 de Septiembre 1402, Col. Centro, Puebla, Pue.",
             "phone": "+52 222 789 6543",
             "website": "https://elsaberlibros.mx",
-            "icon": "../images/library.jpg",
+            "icon": "../images/bakery.webp",
             "membership": 1,
             "description": "Independent bookstore offering a wide range of educational and literary materials."
         },
@@ -59,7 +59,7 @@
             "address": "Calle 7 Poniente 918, Col. El Carmen, Puebla, Pue.",
             "phone": "+52 222 345 6789",
             "website": "https://lacazuelapuebla.mx",
-            "icon": "../images/restaurant.jpg",
+            "icon": "../images/restaurant.webp",
             "membership": 3,
             "description": "Traditional Mexican cuisine with a modern touch, locally sourced ingredients."
         }

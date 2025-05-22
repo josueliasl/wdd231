@@ -19,26 +19,20 @@
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
-    <script src="scripts/chamber.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
     <header>
         <div id="header">
-            <span><img src="images/puebla-shield.png" width="100"
-                    height="125 dsxz cvbnhjmk,l;'#] a\zxcbcxnbvcvbnmnbvcxz\fghjkl;'#"
-                    alt="Josue Leyva in the Mexican Oval Office"></span>
+            <span><img src="images/puebla-shield.webp" width="42" height="100" alt="Puebla's Shield"></span>
             <div id="title">
                 <h2>Puebla</h2>
                 <p>Chamber of Commerce</p>
             </div>
-            <a id="menu" href="#"></a>
         </div>
-        <div>
+        <div id="small-screen">
+            <a id="menu" href="#"></a>
             <nav>
                 <ul class="navigation">
                     <li class="current-menu-item"><a href="index.html">Home</a></li>
@@ -51,43 +45,51 @@
     </header>
 
     <main>
-        <section id="hero-img">
-            <img src="" width="" height=" " alt="">
-            <button id="keynote-button"></button>
+        <section id="container">
+            <img src="images/city-view.webp" width="960" height="581" alt="Puebla city">
+            <button id="btn">Participate</button>
         </section>
 
         <h1>Home</h1>
-        <section id="current-events-card"></section>
+        <div id="events-weather">
 
-        <section id="weather-card">
-        </section>
-        <section id="business-info-card"></section>
+            <section class="first-row" id="current-events-card">
+                <h2>Current Events</h2>
+                <p>Place Holder</p>
+            </section>
+
+            <section class="first-row" id="weather-card">
+                <h2>Current Weather</h2>
+                <p>Place Holder</p>
+            </section>
+            <section class="first-row" id="weather-prediction">
+                <h2>Weather Forecast</h2>
+                <p>Place Holder</p>
+            </section>
+        </div>
+
     </main>
-
+    <aside id="business-info-card"></aside>
     <footer>
         <div class="information">
-            <h3><a href="chamber/home.html">Chamber of Commerce for Puebla City</a></h3>
+            <h3><a href="chamber/home.html">Chamber of Commerce Directory for Puebla City</a></h3>
             <p><a href="https://maps.app.goo.gl/3LbMLB2Bww9fQige6">Palenque 4, Sta Cruz Buenavista,<br> 72150 Heroica
                     Puebla
                     de Zaragoza, Pue.</a></p>
-            <p>josue.elias.leyva@gmail.com</p>
-            <p>+52 221-518-5923</p>
         </div>
         <nav class="sociallinks">
-            <a class="icon" href="https://www.linkedin.com/in/josue-e/" width="42px" height="42" target="_blank">
-                <img src="images/linkedin.avif" alt="Linkedin icon">
+            <a class="icon" href="https://www.linkedin.com/in/josue-e/" target="_blank">
+                <img src="images/linkedin.webp" width="42" height="42" alt="Linkedin icon">
             </a>
-            <a class="icon" href="https://www.instagram.com/" width="42px" height="42" target="_blank">
-                <img src="images/instagram.png" alt="instagram icon">
+            <a class="icon" href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.webp" width="42" height="42" alt="instagram icon">
             </a>
-            <a class="icon" href="https://www.youtube.com/" width="42px" height="42" target="_blank">
-                <img src="images/youtube.png" alt="youtube icon">
+            <a class="icon" href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.webp" width="42" height="42" alt="youtube icon">
             </a>
         </nav>
         <div>
-            <p>WDD231 Class Project</p>
-            <p>Josue Elias Leyva Gonzalez</p>
-            <p><span id="currentYear"></span> Puebla's Chamber of Commerce</p>
+            <p>+52 221-518-5923<br><span id="currentYear"></span></p>
             <p id="lastModified"></p>
         </div>
     </footer>
