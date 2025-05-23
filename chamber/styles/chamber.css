@@ -255,17 +255,18 @@
         text-align: center;
         border: 2px solid white;
     }
-    
+
     #container #btn:hover {
         background-color: var(--top-base);
         color: var(--text-top-base);
     }
-    
-    #events-weather{
+
+    #events-weather {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .first-row {
         border: 2px solid var(--text-top-base);
         padding: 0px;
@@ -273,7 +274,8 @@
         margin: 5px;
         border-radius: 10px;
     }
-    .first-row  h2{
+
+    .first-row h2 {
         font-family: var(--font-family);
         font-size: small;
         background-color: var(--top-base);
@@ -284,11 +286,49 @@
         border-top-right-radius: 10px;
         max-width: 400px;
     }
-    #weather-card{
+
+    #weather-card {
         text-align: center;
     }
-    #current-events-card p{
+
+    #current-events-card p {
         text-align: justify;
         margin: 10px;
     }
+
+    #future-temp {
+        text-align: center;
+    }
+
+    .busCard {
+        max-width: 230px;
+        display: grid;
+        border: 2px solid var(--text-top-base);
+        margin: 5px;
+        border-radius: 10px;
+        justify-items: center;
+
+    }
+
+
+    .busCard p {
+        text-align: center;
+        margin: 12px;
+        max-width: 350px;
+
+    }
+
+    .busCard h3 {
+        font-family: var(--font-family);
+        text-decoration: underline;
+        text-align: center;
+
+    }
+
+    #businessInfoCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

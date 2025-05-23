@@ -262,4 +262,45 @@
     .first-row {
         height: 180px;
     }
+
+    #future-temp {
+        text-align: center;
+    }
+
+    #business {
+        display: grid;
+        grid-template-rows: 1fr;
+        justify-content: center;
+    }
+
+    .businessInfoCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .busCard {
+        max-width: 240px;
+        border: 2px solid var(--text-top-base);
+        margin: 5px;
+        border-radius: 10px;
+        justify-items: center;
+
+    }
+
+
+    .busCard p {
+        text-align: center;
+        margin: 12px;
+        max-width: 350px;
+
+    }
+
+    .busCard h3 {
+        font-family: var(--font-family);
+        text-decoration: underline;
+        text-align: center;
+
+    }
+
 }

@@ -1,0 +1,28 @@
+{
+    "business": [
+        {
+            "name": "Frutería La Esperanza",
+            "phone": "+52 222 234 5678",
+            "website": "https://laesperanza.com.mx",
+            "tagLine": "Fresh fruits and vegetables.",
+            "email": "contacto@laesperanza.com.mx",
+            "icon": "../images/fruits.webp"
+        },
+        {
+            "name": "Tecnologías Plata",
+            "phone": "+52 222 876 5432",
+            "website": "https://tecnologiasplata.mx",
+            "tagLine": "Tech support, software development.",
+            "email": "soporte@tecnologiasplata.mx",
+            "icon": "../images/technology.webp"
+        },
+        {
+            "name": "Club Deportivo Oro",
+            "phone": "+52 222 998 7766",
+            "website": "https://cluboro.mx",
+            "tagLine": "High-performance gym, personal training.",
+            "email": "info@cluboro.mx",
+            "icon": "../images/gym.webp"
+        }
+    ]
+}
