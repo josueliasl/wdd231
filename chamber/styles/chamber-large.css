@@ -199,7 +199,6 @@
     #container img {
         height: auto;
         max-width: 100%;
-        box-shadow: var(--text-top-base);
         opacity: 0.8;
     }
 
