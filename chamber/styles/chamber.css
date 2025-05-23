@@ -282,5 +282,13 @@
         padding: 6px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        max-width: 400px;
+    }
+    #weather-card{
+        text-align: center;
+    }
+    #current-events-card p{
+        text-align: justify;
+        margin: 10px;
     }
 }
