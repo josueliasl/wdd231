@@ -299,7 +299,7 @@
         text-align: center;
     }
 
-    .busCard {
+    .busCardInfo {
         max-width: 230px;
         display: grid;
         border: 2px solid var(--text-top-base);
@@ -309,15 +309,20 @@
 
     }
 
+    .bussCard {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-    .busCard p {
+    .bussCard p {
         text-align: center;
         margin: 12px;
         max-width: 350px;
 
     }
 
-    .busCard h3 {
+    .bussCard h3 {
         font-family: var(--font-family);
         text-decoration: underline;
         text-align: center;

@@ -1,3 +1,5 @@
+
+
 let currentYear = new Date().getFullYear();
 let lastModified = document.lastModified;
 
@@ -31,8 +33,8 @@ async function apiFetch() {
         const response = await fetch(myURLtoday);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing only
-            displayResults(data); // uncomment when ready
+            console.log(data);
+            displayResults(data);
         } else {
             throw Error(await response.text());
         }
@@ -42,7 +44,7 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -60,8 +62,8 @@ async function apiFetchFuture() {
         const response = await fetch(myURLfuture);
         if (response.ok) {
             const data = await response.json();
-            console.log(data); // testing only
-            displayResultsFuture(data); // uncomment when ready
+            console.log(data);
+            displayResultsFuture(data);
         } else {
             throw Error(await response.text());
         }
@@ -83,12 +85,14 @@ function displayResultsFuture(data) {
 
 const businessInfoCard = document.querySelector('.businessInfoCard');
 let businesses = [];
-const url = 'data/home-members.json';
+const url = 'data/members.json';
 
 async function getBusinessData() {
     const response = await fetch(url);
     const data = await response.json();
-    businesses = data.business; // temporary testing of data response
+
+    const randomSelection = data.business.sort(() => 0.5 - Math.random());
+    businesses = randomSelection.slice(0, 3);
     renderGrid();
 }
 getBusinessData();
@@ -98,7 +102,7 @@ function renderGrid() {
     businessInfoCard.innerHTML = '';
     businesses.forEach(business => {
         const busCard = document.createElement('div');
-        busCard.className = 'busCard';
+        busCard.className = 'busCardInfo';
 
         const icon = document.createElement('img');
         icon.src = `images/${business.icon}`;
@@ -109,8 +113,8 @@ function renderGrid() {
         const name = document.createElement('h3');
         name.textContent = business.name;
 
-        const tagLine = document.createElement('p');
-        tagLine.textContent = business.tagLine;
+        const description = document.createElement('p');
+        description.textContent = business.description;
 
         const phone = document.createElement('p');
         phone.innerHTML = business.phone;
@@ -123,7 +127,7 @@ function renderGrid() {
 
         busCard.appendChild(icon);
         busCard.appendChild(name);
-        busCard.appendChild(tagLine);
+        busCard.appendChild(description);
         busCard.appendChild(phone);
         busCard.appendChild(website);
         busCard.appendChild(email);

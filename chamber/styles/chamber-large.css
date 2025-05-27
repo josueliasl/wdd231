@@ -267,8 +267,7 @@
     }
 
     #business {
-        display: grid;
-        grid-template-rows: 1fr;
+        display: flex;
         justify-content: center;
     }
 
@@ -278,8 +277,13 @@
         justify-content: center;
     }
 
-    .busCard {
-        max-width: 240px;
+    .bussCard {
+        display: flex;
+        justify-content: center;
+    }
+
+    .busCardInfo {
+        max-width: 440px;
         border: 2px solid var(--text-top-base);
         margin: 5px;
         border-radius: 10px;
@@ -288,14 +292,14 @@
     }
 
 
-    .busCard p {
+    .bussCard p {
         text-align: center;
         margin: 12px;
         max-width: 350px;
 
     }
 
-    .busCard h3 {
+    .bussCard h3 {
         font-family: var(--font-family);
         text-decoration: underline;
         text-align: center;
