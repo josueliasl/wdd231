@@ -113,8 +113,8 @@ function renderGrid() {
         const name = document.createElement('h3');
         name.textContent = business.name;
 
-        const description = document.createElement('p');
-        description.textContent = business.description;
+        const tagline = document.createElement('p');
+        tagline.textContent = business.tagline;
 
         const phone = document.createElement('p');
         phone.innerHTML = business.phone;
@@ -127,7 +127,7 @@ function renderGrid() {
 
         busCard.appendChild(icon);
         busCard.appendChild(name);
-        busCard.appendChild(description);
+        busCard.appendChild(tagline);
         busCard.appendChild(phone);
         busCard.appendChild(website);
         busCard.appendChild(email);

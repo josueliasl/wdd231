@@ -8,7 +8,8 @@
             "icon": "../images/fruits.webp",
             "membership": 1,
             "description": "Fresh fruits and vegetables, locally sourced products.",
-            "email": "contacto@laesperanza.com.mx"
+            "email": "contacto@laesperanza.com.mx",
+            "tagline": "Gold"
         },
         {
             "name": "Tecnologías Plata",
@@ -18,7 +19,8 @@
             "icon": "../images/technology.webp",
             "membership": 2,
             "description": "Tech support, software development, and networking services.",
-            "email": "soporte@tecnologiasplata.mx"
+            "email": "soporte@tecnologiasplata.mx",
+            "tagline": "Silver"
         },
         {
             "name": "Club Deportivo Oro",
@@ -28,7 +30,8 @@
             "icon": "../images/gym.webp",
             "membership": 3,
             "description": "High-performance gym, personal training, and spa facilities.",
-            "email": "info@cluboro.mx"
+            "email": "info@cluboro.mx",
+            "tagline": "Gold"
         },
         {
             "name": "Panadería El Buen Trigo",
@@ -38,7 +41,8 @@
             "icon": "../images/bakery.webp",
             "membership": 1,
             "description": "Artisanal bakery offering traditional Mexican pastries and bread.",
-            "email": "contacto@elbuentrigo.com.mx"
+            "email": "contacto@elbuentrigo.com.mx",
+            "tagline": "Silver"
         },
         {
             "name": "Café Aromas de México",
@@ -48,7 +52,8 @@
             "icon": "../images/coffe.webp",
             "membership": 2,
             "description": "High-quality Mexican coffee, desserts, and a cozy atmosphere.",
-            "email": "info@aromasdemexico.mx"
+            "email": "info@aromasdemexico.mx",
+            "tagline": "Gold"
         },
         {
             "name": "Librería El Saber",
@@ -58,7 +63,8 @@
             "icon": "../images/bakery.webp",
             "membership": 1,
             "description": "Independent bookstore offering a wide range of educational and literary materials.",
-            "email": "ventas@elsaberlibros.mx"
+            "email": "ventas@elsaberlibros.mx",
+            "tagline": "Silver"
         },
         {
             "name": "Restaurante La Cazuela",
@@ -68,7 +74,8 @@
             "icon": "../images/restaurant.webp",
             "membership": 3,
             "description": "Traditional Mexican cuisine with a modern touch, locally sourced ingredients.",
-            "email": "reservaciones@lacazuelapuebla.mx"
+            "email": "reservaciones@lacazuelapuebla.mx",
+            "tagline": "Gold"
         }
     ]
 }
