@@ -404,7 +404,7 @@
         font-family: var(--font-family);
         -webkit-appearance: none;
         appearance: none;
-        width: 90%;
+        width: 95%;
     }
 
     input[type=submit]:hover {
@@ -433,5 +433,32 @@
         box-sizing: border-box;
         font-size: 16px;
         resize: none;
+    }
+
+    /*Join Aside*/
+    .levels {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: var(--text-top-base);
+    }
+
+    .levels h3 {
+        color: var(--text-top-base);
+        background-color: var(--top-base);
+        padding: 15px;
+        width: 300px;
+        text-align: center;
+        font-family: var(--font-family);
+        border-radius: 10px;
+    }
+
+    .levels h3:hover {
+        color: var(--top-base);
+        background-color: var(--text-top-base);
+    }
+    #join-aside-h2{
+        font-family: var(--font-family);
+        text-align: center;
     }
 }
