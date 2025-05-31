@@ -362,14 +362,19 @@
         input[type=submit] {
             border: none;
             text-align: center;
-            background-color: #3D405B;
-            color: white;
+            background-color: var(--text-top-base);
+            color: var(--top-base);
             border-radius: 1rem;
             padding: .75rem 1.5rem;
             margin: 2rem 0;
             font-size: 1.2rem;
+            font-family: var(--font-family);
             -webkit-appearance: none;
             appearance: none;
+        }
+        input[type=submit]:hover {
+            background-color: var(--top-base);
+            color: var(--text-top-base);
         }
     }
 
