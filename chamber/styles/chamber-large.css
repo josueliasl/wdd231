@@ -319,8 +319,8 @@
 
     label {
         display: block;
-        font-size: .8rem;
-        color: purple;
+        font-size: 1.5rem;
+        color: var(--text-top-base);
         padding-top: .2rem;
     }
 
