@@ -311,6 +311,7 @@
         display: grid;
         justify-items: center;
         justify-content: start;
+        margin: 5rem;
     }
 
     #h2-join {
