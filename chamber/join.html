@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="This is the Puebla's Chamber of Commerce Join in order to do networking and strengthening our local economy.">
+    <meta name="author" content="Josue Elias Leyva Gonzalez">
+    <title>Chamber of Commerce Join for Puebla City</title>
+
+    <meta property="og:title" content="Chamber of Commerce Join for Puebla City">
+    <meta property="og:description"
+        content="This is the Puebla's Chamber of Commerce Join in order to do networking and strengthening our local economy">
+    <meta property="og:image"
+        content="https://a.travel-assets.com/findyours-php/viewfinder/images/res70/228000/228664-Zocalo-Square.jpg" />
+    <meta property="og:url" content="https://josueliasl.github.io/wdd231/chamber/join.html">
+
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-large.css">
+    <script src="scripts/chamber.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div id="header">
+            <span><img src="images/puebla-shield.webp" width="42" height="100" alt="JPuebla's Shield"></span>
+            <div id="title">
+                <h2>Puebla</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+        </div>
+        <div id="small-screen">
+            <a id="menu" href="#"></a>
+            <nav>
+                <ul class="navigation">
+                    <li class="current-menu-item"><a href="index.html">Home</a></li>
+                    <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+                    <li class="current-menu-item"><a href="join.html">Join</a></li>
+                    <li class="current-menu-item"><a href="discover.html">Discover</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h1>Join Us!</h1>
+
+        <form method="GET" action="thankyou.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                    title="Your Last Name"></label>
+            <label>Organizational Title <input type="text" name="organizationTitle" required
+                    autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"
+                    title="Your Organizational Title"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                    required placeholder="123-456-7890"></label>
+            <label>Organization Name <input type="text" name="organizationName" required autocomplete="organization"
+                    title="Organization Name"></label>
+            <label>Membership Level
+                <select name="level" required>
+                    <option value="Non Profit">Non Profit</option>
+                    <option value="Bronze Membership">Bronze Membership</option>
+                    <option value="Silver Membership">Silver Membership</option>
+                    <option value="Gold Membership">Gold Membership</option>
+                </select>
+            </label>
+            <label>Description<textarea name="description" title="Description" required></textarea></label>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber of Commerce">
+        </form>
+    </main>
+    <aside>
+
+    </aside>
+
+    <footer>
+        <div class="information">
+            <h3><a href="chamber/home.html">Chamber of Commerce Join page</a></h3>
+            <p><a href="https://maps.app.goo.gl/3LbMLB2Bww9fQige6">Palenque 4, Sta Cruz Buenavista,<br> 72150 Heroica
+                    Puebla
+                    de Zaragoza, Pue.</a></p>
+        </div>
+        <nav class="sociallinks">
+            <a class="icon" href="https://www.linkedin.com/in/josue-e/" target="_blank">
+                <img src="images/linkedin.webp" width="42" height="42" alt="Linkedin icon">
+            </a>
+            <a class="icon" href="https://www.instagram.com/" target="_blank">
+                <img src="images/instagram.webp" width="42" height="42" alt="instagram icon">
+            </a>
+            <a class="icon" href="https://www.youtube.com/" target="_blank">
+                <img src="images/youtube.webp" width="42" height="42" alt="youtube icon">
+            </a>
+        </nav>
+        <div>
+            <p>+52 221-518-5923<br><span id="currentYear"></span></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
