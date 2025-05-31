@@ -72,6 +72,16 @@
                 </label>
                 <label>Description<textarea name="description" title="Description" required></textarea></label>
                 <input type="hidden" name="timestamp" id="timestamp">
+                <script>
+                    const form = document.querySelector('form');
+                    const timestampInput = document.getElementById("timestamp")
+
+                    timestampInput.value = new Date().toISOString();
+
+                    form.addEventListener('submit', function () {
+                        timestampInput.value = new Date().toISOString();
+                    });
+                </script>
                 <input type="submit" value="Join the Chamber of Commerce">
             </form>
         </main>

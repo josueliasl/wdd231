@@ -6,6 +6,5 @@ document.querySelector('#results').innerHTML = `
 <p>Organizational Name: ${myInfo.get('organizationName')} </p>
 <p>Email: ${myInfo.get('email')}</p>
 <p>Phone: ${myInfo.get('phone')}</p>
-<p>Your level: ${myInfo.get('level')}</p>
-<p>Description: ${myInfo.get('description')}</p>
+<p>${myInfo.get('timestamp')}</p>
 `
