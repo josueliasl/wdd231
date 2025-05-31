@@ -344,7 +344,7 @@
 
     form {
         margin: 1rem 2%;
-
+    }
         label {
             display: block;
             font-size: .8rem;
@@ -405,7 +405,7 @@
             background-color: var(--top-base);
             color: var(--text-top-base);
         }
-    }
+    
 
     input:-webkit-autofill {
         -webkit-text-fill-color: #3D405B;
@@ -428,5 +428,5 @@
         font-size: 16px;
         resize: none;
     }
-
 }
+
