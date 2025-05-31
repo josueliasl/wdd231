@@ -307,6 +307,11 @@
     }
 
     /* JOIN US */
+    #main-join {
+        display: grid;
+        justify-items: center;
+        justify-content: start;
+    }
 
     #h2-join {
         font-family: var(--font-family);

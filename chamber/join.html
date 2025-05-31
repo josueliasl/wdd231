@@ -45,36 +45,37 @@
         </div>
     </header>
 
-    <main>
-        <h1>Join Us!</h1>
-
-        <form method="GET" action="thankyou.html" class="designOne">
-            <label>First Name <input type="text" name="first" required autocomplete="given-name"
-                    title="Your First Name"></label>
-            <label>Last Name <input type="text" name="last" required autocomplete="family-name"
-                    title="Your Last Name"></label>
-            <label>Organizational Title <input type="text" name="organizationTitle" required
-                    autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"
-                    title="Your Organizational Title"></label>
-            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
-                    autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
-                    required placeholder="123-456-7890"></label>
-            <label>Organization Name <input type="text" name="organizationName" required autocomplete="organization"
-                    title="Organization Name"></label>
-            <label>Membership Level
-                <select name="level" required>
-                    <option value="">Non Profit</option>
-                    <option value="Bronze Membership">Bronze Membership</option>
-                    <option value="Silver Membership">Silver Membership</option>
-                    <option value="Gold Membership">Gold Membership</option>
-                </select>
-            </label>
-            <label>Description<textarea name="description" title="Description" required></textarea></label>
-            <input type="hidden" name="timestamp" id="timestamp">
-            <input type="submit" value="Join the Chamber of Commerce">
-        </form>
-    </main>
+    <div id="main-join">
+        <main>
+            <h1>Join Us!</h1>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Organizational Title <input type="text" name="organizationTitle" required
+                        autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$"
+                        title="Your Organizational Title"></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                        autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                        required placeholder="123-456-7890"></label>
+                <label>Organization Name <input type="text" name="organizationName" required autocomplete="organization"
+                        title="Organization Name"></label>
+                <label>Membership Level
+                    <select name="level" required>
+                        <option value="">Non Profit</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label>Description<textarea name="description" title="Description" required></textarea></label>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join the Chamber of Commerce">
+            </form>
+        </main>
+    </div>
     <aside>
 
     </aside>
