@@ -1,4 +1,4 @@
-@media only screen and (min-width:415px) {
+@media only screen and (min-width:64rem) {
 
     :root {
         --top-base: rgb(237, 235, 235);
@@ -473,4 +473,9 @@
     }
 
 
+
+    .placeCard {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

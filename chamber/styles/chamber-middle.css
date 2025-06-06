@@ -1,4 +1,5 @@
-@media only screen and (max-width:414px) {
+@media only screen and (max-width: 63rem) and (min-width: 415px) {
+
     :root {
         --top-base: rgb(237, 235, 235);
         --text-top-base: black;
@@ -529,4 +530,19 @@
         margin: 1rem 10px;
         grid-area: image;
     }
+
+    #places div {
+        margin: 1rem 8px;
+        border: 1px solid #999;
+        background-color: var(--top-base);
+        border-radius: 10px;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address"
+            "image cost";
+    }
+
 }

@@ -1,0 +1,60 @@
+{
+    "places": [
+        {
+            "name": "Zócalo de Puebla",
+            "address": "Av. Don Juan de Palafox y Mendoza, Centro, 72000 Puebla, Pue.",
+            "cost": "Free",
+            "description": "The main square of Puebla, surrounded by colonial buildings, restaurants, and cultural attractions. Ideal for a stroll and people-watching.",
+            "photoURL": "../images/zocalo.webp"
+        },
+        {
+            "name": "Catedral de Puebla",
+            "address": "C. 16 de Septiembre s/n, Centro, 72000 Puebla, Pue.",
+            "cost": "Free",
+            "description": "A stunning Baroque-style cathedral with the tallest towers in Mexico. A masterpiece of religious architecture.",
+            "photoURL": "../images/cathedral.webp"
+        },
+        {
+            "name": "Museo Amparo",
+            "address": "2 Sur 708, Centro, 72000 Puebla, Pue.",
+            "cost": "$80 MXN",
+            "description": "A modern museum showcasing pre-Hispanic, colonial, and contemporary art in a beautifully restored building.",
+            "photoURL": "../images/museum-amparo.webp"
+        },
+        {
+            "name": "Estrella de Puebla",
+            "address": "Osa Mayor 2520, Reserva Territorial Atlixcayotl, 72830 Puebla, Pue.",
+            "cost": "$40 MXN",
+            "description": "A giant Ferris wheel offering panoramic views of the city and the volcanoes on clear days.",
+            "photoURL": "../images/star.webp"
+        },
+        {
+            "name": "Africam Safari",
+            "address": "Km 16.5 Carretera al Oasis Valsequillo, 72960 Puebla, Pue.",
+            "cost": "$300 MXN",
+            "description": "A safari-style zoo where animals roam freely in natural habitats. Ideal for families and wildlife enthusiasts.",
+            "photoURL": "../images/africam.webp"
+        },
+        {
+            "name": "Fuerte de Loreto",
+            "address": "Calz. de los Fuertes s/n, Centro, 72290 Puebla, Pue.",
+            "cost": "$60 MXN",
+            "description": "A historical fort where the Battle of Puebla took place on May 5, 1862. Now a museum with artifacts and exhibits.",
+            "photoURL": "../images/stronghold.webp"
+        },
+        {
+            "name": "Callejón de los Sapos",
+            "address": "Calle 6 Sur, Centro, 72000 Puebla, Pue.",
+            "cost": "Free",
+            "description": "A colorful alley famous for its antiques market and vibrant colonial architecture. Great for photos and local shopping.",
+            "photoURL": "../images/frogs.webp"
+        },
+        {
+            "name": "Capilla del Rosario",
+            "address": "Av. 5 de Mayo 407, Centro, 72000 Puebla, Pue.",
+            "cost": "$20 MXN",
+            "description": "One of the most ornate Baroque chapels in Latin America, located inside the Templo de Santo Domingo.",
+            "photoURL": "../images/chapel.webp"
+        }
+    ]
+}
