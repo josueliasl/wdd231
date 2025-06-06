@@ -60,4 +60,33 @@ function placeCards() {
         cardPlace.appendChild(cost);
         placeCard.appendChild(cardPlace);
     });
+};
+
+let lastVisit = document.getElementById('visitMessage');
+
+let visits = localStorage.getItem('lastVisit');
+if (visits === null) {
+    lastVisit.textContent = "Welcome! Let us know if you have any questions.";
+    localStorage.setItem('lastVisit', Date.now())
 }
+
+else {
+    let parsedVisits = parseInt(visits);
+
+    const timestamp = Date.now();
+    let passedTime = timestamp - parsedVisits;
+    let daysNumber = Math.round(passedTime / 86400000);
+
+    if (daysNumber === 0) {
+        lastVisit.textContent = "Back so soon! Awesome!";
+        localStorage.setItem('lastVisit', Date.now())
+    }
+    if (daysNumber === 1) {
+        lastVisit.textContent = "You last visited 1 day ago.";
+        localStorage.setItem('lastVisit', Date.now())
+    }
+    if (daysNumber >= 2) {
+        lastVisit.textContent = `You last visited ${daysNumber} days ago.`;
+        localStorage.setItem('lastVisit', Date.now())
+    }
+};
