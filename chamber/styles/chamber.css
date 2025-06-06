@@ -1,4 +1,4 @@
-@media only screen and (max-width:414px) {
+@media only screen and (max-width:640px) {
     :root {
         --top-base: rgb(237, 235, 235);
         --text-top-base: black;
