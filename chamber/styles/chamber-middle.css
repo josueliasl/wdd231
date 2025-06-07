@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1024px) and (min-width: 641px) {
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
 
     :root {
         --top-base: rgb(237, 235, 235);
@@ -111,17 +111,13 @@
     footer {
         /* This is the only one to change in large css*/
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: var(--top-base);
         font-family: var(--font-family);
-        font-size: 10px;
-        padding: 0px;
+        font-size: smaller;
+        justify-content: space-evenly;
     }
 
-    footer p,
-    h3 {
-        margin-left: 10px;
-    }
 
     .sociallinks {
         display: flex;
@@ -139,19 +135,20 @@
         background-color: var(--text-top-base);
     }
 
+    .icon img {
+        border-radius: 100px;
+    }
+
     .sociallinks img {
         width: 42px;
         height: 42px;
         margin: 3px;
+        ;
     }
 
     .sociallinks img:hover {
         background-color: var(--text-top-base);
         padding: 1px;
-    }
-
-    .icon img {
-        border-radius: 100px;
     }
 
     /* DIRECTORY MAIN */
@@ -205,6 +202,7 @@
         border-radius: 10px;
         background-color: var(--top-base);
         font-family: var(--font-family);
+        width: 500px;
     }
 
     .card img {
@@ -212,8 +210,6 @@
     }
 
     .list {
-        display: flex;
-        flex-direction: column;
         border: black solid 3px;
         border-radius: 10px;
         background-color: var(--top-base);
@@ -222,16 +218,18 @@
     }
 
     .list ul {
+        display: grid;
         list-style-type: none;
         text-align: center;
         margin-right: 20px;
     }
 
-    /* HOME MAIN*/
-
+    /*HOME MAIN*/
     #container {
         position: relative;
         width: 100%;
+        display: grid;
+        justify-items: center;
     }
 
     #container img {
@@ -243,13 +241,13 @@
     #container #btn {
         position: absolute;
         top: 85%;
-        left: 75%;
+        left: 70%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         background-color: var(--text-top-base);
         color: white;
-        font-size: 16px;
-        padding: 10px 10px;
+        font-size: 20px;
+        padding: 15px 15px;
         border: none;
         cursor: pointer;
         border-radius: 5px;
@@ -263,16 +261,16 @@
     }
 
     #events-weather {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 2fr 1fr 1fr;
         align-items: center;
+        width: 80%;
     }
 
     .first-row {
         border: 2px solid var(--text-top-base);
-        padding: 0px;
-        width: 90%;
-        margin: 5px;
+        margin: 10px;
         border-radius: 10px;
     }
 
@@ -285,7 +283,6 @@
         padding: 6px;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
-        max-width: 400px;
     }
 
     #weather-card {
@@ -297,13 +294,32 @@
         margin: 10px;
     }
 
+    .first-row {
+        height: 180px;
+    }
+
     #future-temp {
         text-align: center;
     }
 
+    #business {
+        display: flex;
+        justify-content: center;
+    }
+
+    .businessInfoCard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bussCard {
+        display: flex;
+        justify-content: center;
+    }
+
     .busCardInfo {
-        max-width: 230px;
-        display: grid;
+        max-width: 440px;
         border: 2px solid var(--text-top-base);
         margin: 5px;
         border-radius: 10px;
@@ -311,11 +327,6 @@
 
     }
 
-    .bussCard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .bussCard p {
         text-align: center;
@@ -331,15 +342,13 @@
 
     }
 
-    #businessInfoCard {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     /* JOIN US */
-
-
+    #main-join {
+        display: grid;
+        justify-items: center;
+        justify-content: start;
+        margin: 5rem;
+    }
 
     #h2-join {
         font-family: var(--font-family);
@@ -348,11 +357,12 @@
 
     form {
         margin: 1rem 2%;
+        width: 500px;
     }
 
     label {
         display: block;
-        font-size: 1rem;
+        font-size: 1.5rem;
         color: var(--text-top-base);
         padding-top: .2rem;
     }
@@ -377,7 +387,7 @@
         border-left-color: #555;
         font-size: 1rem;
         color: #3D405B;
-        width: 250px;
+        width: 500px;
     }
 
     input:required {
@@ -400,19 +410,17 @@
         color: var(--top-base);
         border-radius: 1rem;
         padding: .75rem 1.5rem;
-        margin: 1rem 0;
-        font-size: 1rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
         font-family: var(--font-family);
         -webkit-appearance: none;
         appearance: none;
-        width: 95%;
     }
 
     input[type=submit]:hover {
         background-color: var(--top-base);
         color: var(--text-top-base);
     }
-
 
     input:-webkit-autofill {
         -webkit-text-fill-color: #3D405B;
@@ -423,12 +431,11 @@
         padding: 0 1rem;
         border: 1px solid #E07A5F;
         border-radius: 6px;
-        margin: 5px;
-        ;
+        margin-bottom: 10px;
     }
 
     textarea {
-        width: 90%;
+        width: 100%;
         height: 150px;
         padding: 12px 20px;
         box-sizing: border-box;
@@ -442,6 +449,7 @@
         flex-direction: column;
         align-items: center;
         color: var(--text-top-base);
+        margin-bottom: 20px;
     }
 
     .levels h3 {
@@ -517,6 +525,8 @@
     #places div h3 {
         margin: 1rem 10px;
         grid-area: name;
+        font-family: var(--font-family);
+        font-size: larger;
     }
 
 
@@ -531,6 +541,15 @@
         grid-area: image;
     }
 
+    #places p {
+        text-align: justify;
+        margin: 15px;
+    }
+
+    #places div img:hover {
+        opacity: .5;
+    }
+
     #places div {
         margin: 1rem 8px;
         border: 1px solid #999;
@@ -543,6 +562,12 @@
             "image description"
             "image address"
             "image cost";
+    }
+
+    #visitMessage {
+        text-align: center;
+        font-family: var(--font-family);
+        font-size: larger;
     }
 
 }

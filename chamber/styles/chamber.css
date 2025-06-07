@@ -223,7 +223,6 @@
     .list ul {
         list-style-type: none;
         text-align: center;
-        margin-right: 20px;
     }
 
     /* HOME MAIN*/
@@ -511,11 +510,14 @@
             "image"
             "address"
             "cost";
+        justify-items: center;
     }
 
     #places div h3 {
         margin: 1rem 10px;
         grid-area: name;
+        font-size: larger;
+        font-family: var(--font-family);
     }
 
 
@@ -526,7 +528,17 @@
     }
 
     #places div img {
-        margin: 1rem 10px;
+        margin: 1rem 25px;
         grid-area: image;
+    }
+
+    #places div p {
+        text-align: center;
+    }
+
+    #visitMessage {
+        text-align: center;
+        font-family: var(--font-family);
+        font-size: larger;
     }
 }

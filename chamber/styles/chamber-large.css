@@ -472,10 +472,59 @@
         background-color: rgb(0 0 0 / 50%);
     }
 
+    /* DISCOVER ASIDE*/
+    #places div {
+        margin: 1rem 8px;
+        border: 1px solid #999;
+        background-color: var(--top-base);
+        border-radius: 10px;
+        overflow: hidden;
+        display: grid;
+        grid-template-areas:
+            "name"
+            "description"
+            "image"
+            "address"
+            "cost";
+        justify-items: center;
+    }
 
+    #places div h3 {
+        margin: 1rem 10px;
+        grid-area: name;
+        font-size: larger;
+        font-family: var(--font-family);
+    }
+
+
+
+    #places div address {
+        margin: 1rem 10px;
+        grid-area: address;
+    }
+
+    #places div img {
+        margin: 1rem 25px;
+        grid-area: image;
+    }
+
+    #places div img:hover {
+        opacity: .5;
+    }
+
+    
+    #places div p {
+        text-align: center;
+    }
 
     .placeCard {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    #visitMessage {
+        text-align: center;
+        font-family: var(--font-family);
+        font-size: larger;
     }
 }
