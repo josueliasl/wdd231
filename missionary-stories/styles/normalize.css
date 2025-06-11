@@ -167,6 +167,10 @@
         color: var(--top-base);
         border: solid 3px var(--top-base);
     }
+    h1{
+        text-align: center;
+        color: var(--top-base);
+    }
 
 
 }
