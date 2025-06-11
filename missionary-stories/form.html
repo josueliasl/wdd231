@@ -48,12 +48,41 @@
             </nav>
         </div>
     </header>
+    <div id="form-layout">
+        <main>
+            <h1>Missionary Stories</h1>
 
-    <main>
-        <h1>Missionary Stories</h1>
-    
-    </main>
+            <h2>We want to hear your stories!</h2>
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                        title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name"
+                        title="Your Last Name"></label>
+                <label>Mission Name <input type="text" name="mission" required autocomplete="missionn-name"
+                        title="Your Mission Name"></label>
 
+                </label>
+                <label>Story</label>
+                <textarea name="story" title="Description" required></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+                <script>
+                    const form = document.querySelector('form');
+                    const timestampInput = document.getElementById("timestamp")
+
+                    timestampInput.value = new Date().toISOString();
+
+                    form.addEventListener('submit', function () {
+                        timestampInput.value = new Date().toISOString();
+                    });
+                </script>
+                <input type="submit" value="Join the Chamber of Commerce">
+            </form>
+
+        </main>
+        <aside>
+            <img src="images/elders.webp" alt="Missionaries smiling" width="650" height="500" loading="lazy">
+        </aside>
+    </div>
     <footer>
         <nav class="sociallinks">
             <a class="icon" href="https://www.linkedin.com/in/josue-e/" target="_blank">
