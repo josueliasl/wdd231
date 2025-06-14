@@ -206,7 +206,8 @@
         padding: 5px;
     }
 
-    .current-temp {
+    .current-temp,
+    .stories {
         background-color: var(--text-top-base);
     }
 

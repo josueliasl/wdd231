@@ -180,9 +180,12 @@
         text-align: center;
         color: var(--top-base);
     }
-    .current-temp{
+
+    .current-temp,
+    .stories {
         background-color: var(--text-top-base);
     }
+
     .index-aside {
         display: flex;
         flex-direction: column;
