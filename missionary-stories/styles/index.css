@@ -78,22 +78,22 @@
         display: block;
     }
 
-    .menu.show::before {
+    #menu.show::before {
         content: 'X';
     }
 
-    .menu {
+    #menu {
         font-size: 3rem;
         font-weight: 500;
         text-decoration: none;
         color: var(--text-top-base);
     }
 
-    .menu::before {
+    #menu::before {
         content: "≡";
     }
 
-    .menu:hover {
+    #menu:hover {
         background-color: var(--text-top-base);
         color: var(--top-base);
         border-radius: 20px;
@@ -192,7 +192,7 @@
         flex-direction: column;
     }
 
-
+    
     .weather-card {
         display: flex;
         flex-direction: column;
