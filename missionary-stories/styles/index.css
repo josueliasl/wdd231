@@ -249,6 +249,15 @@
         text-align: center;
     }
 
+    /*ME*/
+    #me{
+        display: grid;
+        justify-items: center;
+    }
+    #me p{
+        text-align: center;
+    }
+
     /* FORM */
     form {
         margin-left: 10%;
