@@ -183,8 +183,7 @@
     }
 
 
-    .current-temp,
-    .stories {
+    .current-temp {
         background-color: var(--text-top-base);
     }
 

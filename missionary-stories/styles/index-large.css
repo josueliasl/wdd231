@@ -153,8 +153,7 @@
         grid-template-columns: 1fr 3fr
     }
 
-    .current-temp,
-    .stories {
+    .current-temp {
         background-color: var(--text-top-base);
     }
 

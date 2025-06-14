@@ -182,8 +182,7 @@
         color: var(--top-base);
     }
 
-    .current-temp,
-    .stories {
+    .current-temp {
         background-color: var(--text-top-base);
     }
 
@@ -192,7 +191,7 @@
         flex-direction: column;
     }
 
-    
+
     .weather-card {
         display: flex;
         flex-direction: column;
