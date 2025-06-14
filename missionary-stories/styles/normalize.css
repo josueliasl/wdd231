@@ -138,18 +138,18 @@
     }
 
     /* MAIN HOME (INDEX)*/
-    #container {
+    .container {
         width: 100%;
         position: relative;
     }
 
-    #container img {
+    .container img {
         max-width: 620px;
         width: 100%;
         height: auto;
     }
 
-    #container a {
+    .container a {
         text-decoration: none;
         background-color: var(--top-base);
         color: var(--color);
@@ -165,7 +165,7 @@
         cursor: pointer;
     }
 
-    #container a:hover {
+    .container a:hover {
         background-color: var(--text-top-base);
         color: var(--top-base);
         border: solid 3px var(--top-base);
@@ -175,25 +175,29 @@
         text-align: center;
         color: var(--top-base);
     }
+
     /*ASIDE*/
-    #index-aside{
+    .index-aside {
         display: flex;
         flex-direction: column;
     }
-    .purpose{
+
+    .purpose {
         border: 2px solid;
         border-color: var(--top-base);
         padding: 0px;
         margin: 15px;
     }
-    .purpose p{
+
+    .purpose p {
         background-color: var(--text-top-base);
         margin-top: 0px;
         margin-bottom: 0px;
         padding: 10px;
         text-align: center;
     }
-    .purpose h2{
+
+    .purpose h2 {
         background-color: #011f4b;
         color: var(--text-top-base);
         margin-bottom: 0px;
@@ -201,19 +205,22 @@
         margin-top: 0px;
         padding: 5px;
     }
-    #weather-card{
+
+    .weather-card {
         display: flex;
         flex-direction: column;
         border: 2px solid;
         border-color: var(--top-base);
         margin: 15px;
     }
-    figure{
+
+    figure {
         justify-items: center;
         margin-top: 0px;
         margin-bottom: 0px;
     }
-    #weather-card h3{
+
+    .weather-card h3 {
         text-align: center;
         color: var(--text-top-base);
         background-color: var(--top-base);
@@ -221,19 +228,23 @@
         margin-top: 0px;
         padding: 5px;
     }
-    #weather-card p{
+
+    .weather-card p {
         margin-top: 0px;
         margin-bottom: 0px;
         background-color: var(--text-top-base);
         text-align: center;
         padding: 10px;
     }
-    #weather-icon{
+
+    #weather-icon {
         width: 100%;
     }
-    #weather-card figcaption{
+
+    .weather-card figcaption {
         text-align: center;
     }
+
     /* SHARE */
     form {
         margin: 1rem 2%;

@@ -142,19 +142,19 @@
 
     /*MAIN INDEX (HOME)*/
 
-    #container {
+    .container {
         width: 100%;
         position: relative;
         display: flex;
         justify-content: center;
     }
 
-    #container img {
+    .container img {
         width: 65%;
         height: auto;
     }
 
-    #container a {
+    .container a {
         text-decoration: none;
         background-color: var(--top-base);
         color: var(--color);
@@ -170,7 +170,7 @@
         cursor: pointer;
     }
 
-    #container a:hover {
+    .container a:hover {
         background-color: var(--text-top-base);
         color: var(--top-base);
         border: solid 3px var(--top-base);
@@ -181,7 +181,7 @@
         color: var(--top-base);
     }
 
-    #index-aside {
+    .index-aside {
         display: flex;
         flex-direction: column;
     }

@@ -1,4 +1,4 @@
-export const currentTemp = document.querySelector('#current-temp');
+export const currentTemp = document.querySelector('.current-temp');
 export const weatherIcon = document.querySelector('#weather-icon');
 export const captionDesc = document.querySelector('figcaption');
 
