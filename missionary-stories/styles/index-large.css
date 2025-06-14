@@ -153,31 +153,6 @@
         grid-template-columns: 1fr 3fr
     }
 
-    .purpose {
-        border: 2px solid;
-        border-color: var(--top-base);
-        padding: 0px;
-        margin: 15px;
-    }
-
-    .purpose p {
-        background-color: var(--text-top-base);
-        margin-top: 0px;
-        margin-bottom: 0px;
-        padding: 10px;
-        text-align: center;
-        font-size: larger;
-    }
-
-    .purpose h2 {
-        background-color: #011f4b;
-        color: var(--text-top-base);
-        margin-bottom: 0px;
-        text-align: center;
-        margin-top: 0px;
-        padding: 5px;
-    }
-
     .current-temp,
     .stories {
         background-color: var(--text-top-base);
