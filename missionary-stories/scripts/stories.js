@@ -12,7 +12,7 @@ export async function getStoryData(renderStory) {
         compilation = data.stories;
         renderStory();
     } catch (error) {
-        console.error("There is an error:", error);
+        alert.error("There is an error:", error);
     }
 }
 
