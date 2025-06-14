@@ -1,17 +1,20 @@
-/*Stories*/
-#storiesContainer {
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-}
+@media only screen and (max-width: 900px) and (min-width: 501px) {
 
-.storyCardInfo {
-    background-color: var(--text-top-base);
-    color: var(--top-base);
-    margin: 15px;
-    border-radius: 5px;
-    max-width: 300px;
-    width: 100%;
-    border: 1px solid var(--top-base);
+    /*Stories*/
+    #storiesContainer {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+
+    .storyCardInfo {
+        background-color: var(--text-top-base);
+        color: var(--top-base);
+        margin: 15px;
+        border-radius: 5px;
+        max-width: 300px;
+        width: 100%;
+        border: 1px solid var(--top-base);
+    }
 }
