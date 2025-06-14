@@ -207,7 +207,7 @@
     }
 
     .current-temp {
-        background-color: #fff;
+        background-color: var(--text-top-base);
     }
 
     .weather-card {
