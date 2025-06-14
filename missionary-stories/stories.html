@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/index-large.css">
-    <script src="scripts/index.js" defer></script>
+    <script type="module" src="scripts/index.mjs"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -51,7 +51,8 @@
 
     <main>
         <h1>Missionary Stories</h1>
-
+        <div id="storiesContainer" class="stories"></div>
+        <dialog id="story-details"></dialog>
     </main>
 
     <footer>

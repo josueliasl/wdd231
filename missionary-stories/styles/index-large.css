@@ -1,4 +1,4 @@
-@media only screen and (min-width:641px) {
+@media only screen and (min-width: 901px) {
 
     * {
         font-family: var(--font-family);
@@ -32,6 +32,9 @@
         font-size: 2rem;
     }
 
+    .navigation a:active {
+        background-color: yellow;
+    }
 
     #header img {
         width: 105px;
@@ -142,6 +145,77 @@
     h1 {
         text-align: center;
         color: var(--top-base);
+    }
+
+    #index-aside {
+        display: grid;
+        grid-template-columns: 1fr 3fr
+    }
+
+    .purpose {
+        border: 2px solid;
+        border-color: var(--top-base);
+        padding: 0px;
+        margin: 15px;
+    }
+
+    .purpose p {
+        background-color: var(--text-top-base);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-align: center;
+        font-size: larger;
+    }
+
+    .purpose h2 {
+        background-color: #011f4b;
+        color: var(--text-top-base);
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
+    #weather-card {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        border-color: var(--top-base);
+        margin: 15px;
+        background-color: var(--text-top-base)
+    }
+
+    figure {
+        justify-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    #weather-card h3 {
+        text-align: center;
+        color: var(--text-top-base);
+        background-color: var(--top-base);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 5px;
+    }
+
+    #weather-card p {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: var(--text-top-base);
+        text-align: center;
+        padding: 10px;
+        font-size: large;
+    }
+
+    #weather-icon {
+        width: 100%;
+    }
+
+    #weather-card figcaption {
+        text-align: center;
     }
 
     /* FORM */
@@ -259,5 +333,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    /*Stories*/
+    #storiesContainer {
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .storyCardInfo {
+        background-color: var(--text-top-base);
+        color: var(--top-base);
+        margin: 15px;
+        border-radius: 5px;
+        max-width: 300px;
+        width: 100%;
+        border: 1px solid var(--top-base);
     }
 }

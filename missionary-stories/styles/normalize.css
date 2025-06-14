@@ -1,4 +1,4 @@
-@media only screen and (max-width:640px) {
+@media only screen and (max-width:500px) {
     * {
         font-family: var(--font-family);
     }
@@ -175,7 +175,65 @@
         text-align: center;
         color: var(--top-base);
     }
-
+    /*ASIDE*/
+    #index-aside{
+        display: flex;
+        flex-direction: column;
+    }
+    .purpose{
+        border: 2px solid;
+        border-color: var(--top-base);
+        padding: 0px;
+        margin: 15px;
+    }
+    .purpose p{
+        background-color: var(--text-top-base);
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 10px;
+        text-align: center;
+    }
+    .purpose h2{
+        background-color: #011f4b;
+        color: var(--text-top-base);
+        margin-bottom: 0px;
+        text-align: center;
+        margin-top: 0px;
+        padding: 5px;
+    }
+    #weather-card{
+        display: flex;
+        flex-direction: column;
+        border: 2px solid;
+        border-color: var(--top-base);
+        margin: 15px;
+    }
+    figure{
+        justify-items: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    #weather-card h3{
+        text-align: center;
+        color: var(--text-top-base);
+        background-color: var(--top-base);
+        margin-bottom: 0px;
+        margin-top: 0px;
+        padding: 5px;
+    }
+    #weather-card p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+        background-color: var(--text-top-base);
+        text-align: center;
+        padding: 10px;
+    }
+    #weather-icon{
+        width: 100%;
+    }
+    #weather-card figcaption{
+        text-align: center;
+    }
     /* SHARE */
     form {
         margin: 1rem 2%;
@@ -274,6 +332,21 @@
         height: auto;
         margin-bottom: 20px
     }
+
+    /*Stories */
+    #storiesContainer {
+        text-align: center;
+    }
+
+    .storyCardInfo {
+        background-color: var(--text-top-base);
+        color: var(--top-base);
+        border: 1px solid var(--top-base);
+        border-radius: 5px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
 
 
 }
