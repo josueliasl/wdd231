@@ -17,11 +17,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     getStoryData(() => renderStory(container, (story) => displayStoryDetails(story, storyDetails)));
 
-    const lastStory = localStorage.getItem("lastViewedStory");
-    if (lastStory) {
-        console.log(`Would you like to continue reading ${lastStory}'s story?`)
-    }
-
     apiFetch();
     menu();
 
