@@ -35,6 +35,9 @@
         font-size: 1.3rem;
     }
 
+    nav li{
+        display: block;
+    }
     ul {
         list-style-type: none;
         display: flex;
