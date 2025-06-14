@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const lastStory = localStorage.getItem("lastViewedStory");
     if (lastStory) {
-        alert(`Would you like to continue reading ${lastStory}'s story?`);
+        console.log(`Would you like to continue reading ${lastStory}'s story?`)
     }
 
     apiFetch();
