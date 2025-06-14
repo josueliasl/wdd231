@@ -177,6 +177,9 @@
         padding: 5px;
     }
 
+    .current-temp{
+        background-color: #fff;
+    }
     .weather-card {
         display: flex;
         flex-direction: column;
