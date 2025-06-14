@@ -227,6 +227,11 @@
         text-align: center;
     }
 
+    h2 {
+        text-align: center;
+        color: var(--top-base);
+    }
+
     /*ME SECTION*/
     .me {
         display: flex;
@@ -247,7 +252,8 @@
         background-color: var(--text-top-base);
         padding: 10px;
     }
-    .me a{
+
+    .me a {
         text-decoration: none;
         color: var(--color);
         background-color: #011f4b;

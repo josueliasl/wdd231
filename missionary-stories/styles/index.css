@@ -170,7 +170,8 @@
         cursor: pointer;
     }
 
-    .container a:hover, .me a:hover {
+    .container a:hover,
+    .me a:hover {
         background-color: var(--text-top-base);
         color: var(--top-base);
         border: solid 3px var(--top-base);
@@ -191,7 +192,7 @@
         flex-direction: column;
     }
 
-
+    
     .weather-card {
         display: flex;
         flex-direction: column;
@@ -251,7 +252,8 @@
         background-color: var(--text-top-base);
         padding: 10px;
     }
-    .me a{
+
+    .me a {
         text-decoration: none;
         color: var(--color);
         background-color: #011f4b;
