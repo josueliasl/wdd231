@@ -250,12 +250,11 @@
     }
 
     /*ME*/
-    #me {
+    #me{
         display: grid;
         justify-items: center;
     }
-
-    #me p {
+    #me p{
         text-align: center;
     }
 
