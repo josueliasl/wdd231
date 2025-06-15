@@ -135,6 +135,10 @@
     .icon img {
         border-radius: 100px;
     }
+    .info{
+        color: var(--color);
+        margin: 3px;
+    }
 
     /* MAIN HOME (INDEX)*/
     .container {
